@@ -37,23 +37,6 @@ def run_sampling(rounds:int)->dict:
         p += 0.05
     return samples
 
-def run_par_sampling(rounds:int)->dict:
-    '''
-    Conducts experiments with usage of different possibilities for
-    messages generation. Return its result as a dictionary. The keys
-    denote the rank of possibility for each experiment.
-    :param rounds: Number of rounds for each experiment
-    :return: Experiments results
-    '''
-    samples = {}
-    max_p = 0.65
-    p = 0.05
-    while p<=max_p:
-        report = Simulator.run(rounds=rounds, possibility=round(p,2))
-        samples.update({p:report})
-        p += 0.05
-    return samples
-
 
 def read_samples(samples:dict, rounds:int)->tuple:
     '''
