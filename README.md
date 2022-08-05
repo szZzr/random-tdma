@@ -37,7 +37,7 @@ sequenceDiagram
 
 ### Results
 
-![RandomTDMA_Diagramm](/Users/rizos/Desktop/random-tdma/RandomTDMA_Diagramm.png)
+![RandomTDMA_Diagramm](https://github.com/szZzr/random-tdma/blob/master/RandomTDMA_Diagramm.png)
 
 #### Bibliography
 
